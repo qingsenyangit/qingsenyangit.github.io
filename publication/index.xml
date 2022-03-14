@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications | Academic</title>
+    <title>Publications | Qingsen Yan</title>
     <link>/publication/</link>
       <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 10 Dec 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Publications</title>
@@ -13,22 +13,115 @@
     </image>
     
     <item>
-      <title>An example conference paper</title>
-      <link>/publication/example/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/example/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <title>High dynamic range imaging via gradient-aware context aggregation network</title>
+      <link>/publication/pr21/</link>
+      <pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/pr21/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dual-Attention-Guided Network for Ghost-Free High Dynamic Range Imaging</title>
+      <link>/publication/ijcv21/</link>
+      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/ijcv21/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards Accurate HDR Imaging with Learning Generator Constraints</title>
+      <link>/publication/neuro21/</link>
+      <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/neuro21/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An attention-guided deep neural network with multi-scale feature fusion for liver vessel segmentation</title>
+      <link>/publication/jbhi21/</link>
+      <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/jbhi21/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ghost removal via channel attention in exposure fusion</title>
+      <link>/publication/cviu/</link>
+      <pubDate>Thu, 10 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/cviu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Attention-based network for low-light image enhancement</title>
+      <link>/publication/icme/</link>
+      <pubDate>Sat, 25 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/icme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blindly assess image quality in the wild guided by a self-adaptive hyper network</title>
+      <link>/publication/cvpr20/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/cvpr20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AI-assisted CT imaging analysis for COVID-19 screening: Building and deploying a medical AI system</title>
+      <link>/publication/covid19-sys/</link>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/covid19-sys/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>COVID-19 Chest CT Image Segmentation Network by Multi-Scale Fusion and Enhancement Operations</title>
+      <link>/publication/covid19-method/</link>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/covid19-method/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep HDR Imaging via A Non-local Network</title>
+      <link>/publication/tip20/</link>
+      <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/tip20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Attention-guided network for ghost-free high dynamic range imaging</title>
+      <link>/publication/cvpr19/</link>
+      <pubDate>Tue, 25 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/cvpr19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multi-scale dense networks for deep high dynamic range imaging</title>
+      <link>/publication/wacv/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/wacv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Two-stream convolutional networks for blind image quality assessment</title>
+      <link>/publication/tip18/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/tip18/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High dynamic range imaging by sparse representation</title>
+      <link>/publication/neuro17/</link>
+      <pubDate>Mon, 25 Dec 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/neuro17/</guid>
+      <description></description>
     </item>
     
   </channel>

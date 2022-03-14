@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects | Academic</title>
+    <title>Projects | Qingsen Yan</title>
     <link>/project/</link>
       <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Projects</title>
@@ -13,15 +13,169 @@
     </image>
     
     <item>
-      <title>Example Project</title>
-      <link>/project/example/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/example/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+      <title>Vessel Seg</title>
+      <link>/project/jhbi/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/project/jhbi/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;Liver vessel segmentation is fast becoming a key instrument in the diagnosis and surgical planning of liver diseases. In clinical practice, liver vessels are normally manual annotated by clinicians on each slice of CT images, which is extremely laborious. Several deep learning methods existed for liver vessel segmentation, however, promoting the performance of segmentation remains a major challenge due to the large variations and complex structure of liver vessels. Previous methods mainly using existing UNet architecture, but not all features of the encoder are useful for segmentation and some even cause interferences. To overcome this problem, we propose a novel deep neural network for liver vessel segmentation, called LVSNet, which employed special designs to obtain the accurate structure of the liver vessel. Specifically, we design Attention-Guided Concatenation (AGC) module to adaptively select the useful context features from low-level features guided by high-level features. The proposed AGC module focuses on capturing rich complemented information to obtain more details. In addition, we introduce an innovative multi-scale fusion block by constructing hierarchical residual-like connections within one single residual block, which is great importance for effectively linking the local blood vessel fragments together. Furthermore, we construct a new dataset containing 40 thin thickness cases (0.625mm) which consist of CT volumes and annotated vessels. To evaluate the effectiveness of the method with minor vessel, we also propose an automatic stratification method to split major and minor liver vessels. Extensive experimental results demonstrate that the proposed LVSNet outperforms previous methods on liver vessel segmentation datasets. Additionally, we conduct a series of ablation studies that comprehensively support the superiority of the underlying concepts.&lt;/p&gt;
+&lt;h2 id=&#34;framework&#34;&gt;Framework&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-the-proposed-method&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;The proposed method.&#34; srcset=&#34;
+               /project/jhbi/frame_hu8e4290505f5c607e6eac24eb858b98fb_379798_c629d419211bf3c0331997d4dc18a7a2.png 400w,
+               /project/jhbi/frame_hu8e4290505f5c607e6eac24eb858b98fb_379798_7341eadcf856d057e9f204a25ac3d781.png 760w,
+               /project/jhbi/frame_hu8e4290505f5c607e6eac24eb858b98fb_379798_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;/project/jhbi/frame_hu8e4290505f5c607e6eac24eb858b98fb_379798_c629d419211bf3c0331997d4dc18a7a2.png&#34;
+               width=&#34;760&#34;
+               height=&#34;358&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      The proposed method.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;examples-of-the-results&#34;&gt;Examples of the Results&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-results&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Results.&#34; srcset=&#34;
+               /project/jhbi/exp1_hu84846b8ba7695ea7266a515380471fa4_2204506_2f63090c0fbaa811052d8a0c467e7595.png 400w,
+               /project/jhbi/exp1_hu84846b8ba7695ea7266a515380471fa4_2204506_2cd58c8a5c86d90cbcab266c5848aafd.png 760w,
+               /project/jhbi/exp1_hu84846b8ba7695ea7266a515380471fa4_2204506_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;/project/jhbi/exp1_hu84846b8ba7695ea7266a515380471fa4_2204506_2f63090c0fbaa811052d8a0c467e7595.png&#34;
+               width=&#34;760&#34;
+               height=&#34;593&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Results.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;👉 &lt;a href=&#34;https://github.com/qingsenyangit/Liver-vessel-Dataset&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;See&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HDR Deghosting</title>
+      <link>/project/ahdr/</link>
+      <pubDate>Sat, 27 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/project/ahdr/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;Ghosting artifacts caused by moving objects or misalignments is a key challenge in high dynamic range (HDR) imaging for dynamic scenes. Previous methods first register the input low dynamic range (LDR) images using optical flow before merging them, which are error-prone and cause ghosts in results. A very recent work tries to bypass optical flows via a deep network with skip-connections, however, which still suffers from ghosting artifacts for severe movement. To avoid the ghosting from the source, we propose a novel attention-guided end-to-end deep neural network (AHDRNet) to produce high-quality ghost-free HDR images. Unlike previous methods directly stacking the LDR images or features for merging, we use attention modules to guide the merging according to the reference image. The attention modules automatically suppress undesired components caused by misalignments and saturation and enhance desirable fine details in the non-reference images. In addition to the attention model, we use dilated residual dense block (DRDB) to make full use of the hierarchical features and increase the receptive field for hallucinating the missing details. The proposed AHDRNet is a non-flow-based method, which can also avoid the artifacts generated by optical-flow estimation error. Experiments on different datasets show that the proposed AHDRNet can achieve state-of-the-art quantitative and qualitative results.&lt;/p&gt;
+&lt;h2 id=&#34;framework&#34;&gt;Framework&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-the-proposed-method&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;The proposed method.&#34; srcset=&#34;
+               /project/ahdr/frame_hu5e8cd8f6e148936bfa0ad5c38c4f0de7_1642022_2d38363aa73328a255ea8d3d71462a72.png 400w,
+               /project/ahdr/frame_hu5e8cd8f6e148936bfa0ad5c38c4f0de7_1642022_0a3b09030cda569275e393c35c45e848.png 760w,
+               /project/ahdr/frame_hu5e8cd8f6e148936bfa0ad5c38c4f0de7_1642022_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;/project/ahdr/frame_hu5e8cd8f6e148936bfa0ad5c38c4f0de7_1642022_2d38363aa73328a255ea8d3d71462a72.png&#34;
+               width=&#34;760&#34;
+               height=&#34;206&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      The proposed method.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;examples-of-the-results&#34;&gt;Examples of the Results&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-the-proposed-method-can-remove-the-ghosting-artifacts&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;The proposed method can remove the ghosting artifacts.&#34; srcset=&#34;
+               /project/ahdr/fig7_hue469f6dea0857a4bd0a2a405ce591e16_3759173_f39a4729b09d7758787462fa7478a5e5.jpg 400w,
+               /project/ahdr/fig7_hue469f6dea0857a4bd0a2a405ce591e16_3759173_86da09b329fe2d9d798dd914a6bb0032.jpg 760w,
+               /project/ahdr/fig7_hue469f6dea0857a4bd0a2a405ce591e16_3759173_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;/project/ahdr/fig7_hue469f6dea0857a4bd0a2a405ce591e16_3759173_f39a4729b09d7758787462fa7478a5e5.jpg&#34;
+               width=&#34;760&#34;
+               height=&#34;502&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      The proposed method can remove the ghosting artifacts.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-this-sample-shows-the-ahdrnet-can-handle-over-saturation-regions&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;This sample shows the AHDRNet can handle over-saturation regions.&#34; srcset=&#34;
+               /project/ahdr/fig8_hu9d46132c1a717920148b945e50839526_1933687_81067cb3b85cef650de8f48a6c8d01c8.jpg 400w,
+               /project/ahdr/fig8_hu9d46132c1a717920148b945e50839526_1933687_3b3c37dd2c0395ba74cff6ef669053ef.jpg 760w,
+               /project/ahdr/fig8_hu9d46132c1a717920148b945e50839526_1933687_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;/project/ahdr/fig8_hu9d46132c1a717920148b945e50839526_1933687_81067cb3b85cef650de8f48a6c8d01c8.jpg&#34;
+               width=&#34;760&#34;
+               height=&#34;510&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      This sample shows the AHDRNet can handle over-saturation regions.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;👉 &lt;a href=&#34;https://github.com/qingsenyangit/AHDRNet&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;See&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
